@@ -29,3 +29,17 @@ public:
           return first;  
     }
 };
+
+
+
+class Solution:
+    def singleNumber(self, nums: List[int]) -> int:
+        l = sorted(nums)
+        for i in range(0,len(l)-2,3):
+            if l[i]!=l[i+1] :
+                return l[i]
+        return l[-1]
+
+
+
+        
