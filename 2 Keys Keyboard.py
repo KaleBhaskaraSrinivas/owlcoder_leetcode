@@ -8,3 +8,5 @@ class Solution(object):
                 factors += f
             else:
                 f+=1
+
+
